@@ -1,0 +1,60 @@
+body {
+  font-family: 'Huninn', sans-serif;
+  background: #e3e2e2;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(122, 122, 122, 0.5);
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.controls button,
+.controls input[type="range"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+#progress {
+  background: #ccc;
+}
+
+#volume {
+  background: #444;
+}
+
+@media (min-width: 500px) {
+  .controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .controls button,
+  .controls input {
+    width: 48%;
+  }
+}
